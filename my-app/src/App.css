@@ -1,0 +1,10 @@
+body {
+    background-color: #FFFFFF; /* Default body background color */
+    color: #000000; /* Default body text color */
+  }
+  
+  body.dark-mode {
+    background-color: #38444D; /* Dark mode body background color */
+    color: #FFFFFF; /* Dark mode body text color */
+  }
+  
