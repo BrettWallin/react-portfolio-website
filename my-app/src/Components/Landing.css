@@ -1,0 +1,92 @@
+.landing {
+    padding-top: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-pic {
+    height: 400px;
+    margin-right: 100px;
+    border-radius: 50%;
+}
+
+.landing-header {
+    font-size: 20px;
+    color: #00FFFF;
+    margin-bottom: 0px;
+}
+
+.landing-header-name {
+    margin-top: 0px;
+    font-size: 75px;
+    margin-bottom: 15px;
+}
+
+.landing-job-title {
+    margin-top: 0px;
+    color: #00FFFF;
+}
+
+.landing-description {
+    font-size: 15px;
+    max-width: 600px;
+}
+
+.landing-button {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #00FFFF;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .landing {
+      padding-top: 150px; /* Adjusted padding for mobile */
+      flex-direction: column; /* Vertical alignment for mobile */
+      align-items: center;
+    }
+  
+    .profile-pic {
+      height: 250px; /* Adjusted height for mobile */
+      margin-right: 0; /* Removed margin for mobile */
+      margin-bottom: 50px;
+    }
+
+    .landing-header {
+        margin-bottom: 0px;
+    }
+  
+    .landing-header-name {
+      font-size: 40px; /* Adjusted font size for mobile */
+      margin-top: 0px;
+      margin-bottom: 10px; 
+    }
+  
+    .landing-job-title {
+      font-size: 18px; /* Adjusted font size for mobile */
+      margin-bottom: 2px;
+    }
+  
+    .landing-description {
+      font-size: 14px; /* Adjusted font size for mobile */
+      margin-top: 2px;
+      margin-bottom: 5px;
+    }
+  
+    .landing-button {
+      width: 120px; /* Adjusted width for mobile */
+      height: 40px; /* Adjusted height for mobile */
+      font-size: 16px; /* Adjusted font size for mobile */
+      margin-top: 5px;
+      
+    }
+
+    .text-background {
+        margin-left: 20px;
+    }
+  }
