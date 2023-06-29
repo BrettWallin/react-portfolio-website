@@ -1,5 +1,5 @@
 .landing {
-    padding-top: 250px;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -45,8 +45,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .landing {
-      padding-top: 150px; /* Adjusted padding for mobile */
+    .landing { /* Adjusted padding for mobile */
       flex-direction: column; /* Vertical alignment for mobile */
       align-items: center;
     }
