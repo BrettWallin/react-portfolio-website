@@ -20,7 +20,7 @@ export default function About() {
     <div className="about-me">
         <div>
             <h1 className="title">My Experience</h1>
-            <VerticalTimeline className="custom-timeline">
+            <VerticalTimeline >
                 {TimelineElements.map((element) => {
                 let isWorkIcon = element.icon === "work";
 
