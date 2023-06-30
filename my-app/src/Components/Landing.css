@@ -53,6 +53,7 @@
     .profile-pic {
       height: 250px; /* Adjusted height for mobile */
       margin-right: 0; /* Removed margin for mobile */
+      margin-top: 25px;
       margin-bottom: 50px;
     }
 
@@ -86,6 +87,6 @@
     }
 
     .text-background {
-        margin-left: 20px;
+        margin-left: 10px;
     }
   }

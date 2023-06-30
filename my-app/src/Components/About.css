@@ -30,6 +30,10 @@ h3 {
 }
   
 @media only screen and (max-width: 1700px) {
+    .title {
+        font-size: 50px;
+    }
+
     .vertical-timeline-element-date {
       display: block !important;
       float: none !important;
@@ -39,17 +43,107 @@ h3 {
 }
 
 .skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    height: 75vh;
+    color: white;
+    height: 70vh;
     width: 100vw;
-}
-
-.skills-title {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  .skills-title {
     padding-top: 200px;
     font-size: 100px;
     text-align: center;
     color: cyan;
-}
+  }
   
-
+  .skills-container {
+    background-color: white;
+    border: 5px solid cyan;
+    border-radius: 50px;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .skills-header {
+    text-align: center;
+  }
+  
+  .skills-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .skills-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .list-text {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .skills-logo {
+    height: 50px;
+    width: auto;
+    margin-right: 25px;
+  }
+  
+  .skills-animate.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  /* Media Queries */
+  @media only screen and (max-width: 767px) {
+    /* Adjust styles for mobile devices */
+    .skills {
+      flex-direction: column;
+      height: auto;
+      align-items: center;
+    }
+  
+    .skills-title {
+      padding-top: 100px;
+      font-size: 60px;
+    }
+  
+    .skills-container {
+      width: 80%;
+      height: auto;
+      margin: 20px;
+      padding: 20px;
+    }
+  
+    .skills-list li {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .list-text {
+      font-size: 24px;
+      margin-top: 10px;
+    }
+  
+    .skills-logo {
+      height: 40px;
+      margin-right: 0;
+      margin-bottom: 0px;
+    }
+  }
+  
