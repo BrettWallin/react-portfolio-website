@@ -1,0 +1,141 @@
+.project-container {
+  padding-top: 1600px;
+  padding-bottom: 300px;
+}
+
+.projects-title {
+  font-size: 100px;
+  text-align: center;
+}
+
+.project-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  position: relative;
+  width: 400px;
+  height: 420px;
+  margin: 0 10px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-card.active {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.project-card.blur {
+  filter: none;
+  opacity: 0.7;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.project-card h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.project-card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.button-container {
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-button {
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #00FFFF;
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+  margin-right: 50px;
+}
+
+.project-card.mobile img {
+  max-height: 200px;
+}
+
+.project-card.website img {
+  max-width: 100%;
+  height: 200px;
+}
+
+.projects.description {
+  font-weight: bold;
+}
+
+.projects {
+  opacity: 0;
+  transition: opacity 3s ease;
+}
+
+.projects-animate.active {
+  opacity: 1;
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 600px) {
+
+  .project-container {
+    padding-top: 2000px;
+  }
+
+  .projects-title {
+    font-size: 60px;
+  }
+
+  .project-card {
+    width: calc(100% - 20px);
+    margin: 10px;
+    box-shadow: none;
+  }
+  
+  .project-navigation {
+    display: none;
+  }
+
+  .project-card.active {
+    transform: none;
+    z-index: 1;
+  }
+
+  .project-card.blur {
+    filter: none;
+    opacity: 1;
+  }
+
+  .project-button {
+    display: inline-block;
+    margin-right: 20px;
+  }
+}
+
+
+
+  
+  
+
+  
