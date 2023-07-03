@@ -3,7 +3,7 @@ let TimelineElements = [
       id: 1,
       title: "Heartland Community College",
       location: "Normal, Illinois",
-      description: "AS Computer Science\nGPA: 3.6\nRelated Coursework:\n- Computer Science 1\n- Computer Science 2\n- Discrete Structures",
+      description: "AS Computer Science\nGPA: 3.6\nRelated Coursework:\n- CSCI 130: Computer Science 1\n- CSCI 131: Computer Science 2\n- CSCI 115: Discrete Structures",
       date: "August 2021 - May 2023",
       icon: "school",
     },
@@ -19,7 +19,7 @@ let TimelineElements = [
       id: 3,
       title: "Illinois State University",
       location: "Normal, Illinois",
-      description: "BS Computer Science\nGPA:\nRelated CourseWork:\n- Intro to Data Structures\n- Computer Organization",
+      description: "BS Computer Science\nGPA: n/a\nRelated CourseWork:\n- IT 179: Intro to Data Structures\n- IT 225: Computer Organization",
       date: "August 2023 - May 2025",
       icon: "school",
     }

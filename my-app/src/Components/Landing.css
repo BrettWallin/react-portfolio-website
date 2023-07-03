@@ -30,7 +30,7 @@
 }
 
 .landing-description {
-  font-size: 15px;
+  font-size: 16px;
   max-width: 600px;
 }
 
@@ -45,14 +45,14 @@
 }
 
 @media screen and (max-width: 768px) {
-    .landing { /* Adjusted padding for mobile */
-      flex-direction: column; /* Vertical alignment for mobile */
+    .landing { 
+      flex-direction: column;
       align-items: center;
     }
   
     .profile-pic {
-      height: 250px; /* Adjusted height for mobile */
-      margin-right: 0; /* Removed margin for mobile */
+      height: 250px; 
+      margin-right: 0; 
       margin-top: 25px;
       margin-bottom: 50px;
     }
@@ -62,26 +62,27 @@
     }
   
     .landing-header-name {
-      font-size: 40px; /* Adjusted font size for mobile */
+      font-size: 40px;
       margin-top: 0px;
       margin-bottom: 10px; 
     }
   
     .landing-job-title {
-      font-size: 18px; /* Adjusted font size for mobile */
+      font-size: 18px;
       margin-bottom: 2px;
     }
   
     .landing-description {
-      font-size: 14px; /* Adjusted font size for mobile */
+      font-size: 13px; 
+      max-width: 350px;
       margin-top: 2px;
       margin-bottom: 5px;
     }
   
     .landing-button {
-      width: 120px; /* Adjusted width for mobile */
-      height: 40px; /* Adjusted height for mobile */
-      font-size: 16px; /* Adjusted font size for mobile */
+      width: 120px;
+      height: 40px; 
+      font-size: 16px; 
       margin-top: 5px;
       
     }
@@ -90,3 +91,53 @@
         margin-left: 10px;
     }
   }
+
+ /* Add these styles to your existing CSS */
+
+.landing-header-name span {
+  animation: typing 2s steps(14), blink-caret 0.75s step-end infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid;
+  width: fit-content;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: fit-content;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #00FFFF;
+  }
+}
+
+.landing-description span {
+  display: none;
+}
+
+.landing-description.typing span {
+  display: inline;
+  animation: typing-desc 3s steps(42);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes typing-desc {
+  from {
+    width: 0;
+  }
+  to {
+    width: fit-content;
+  }
+}
+
