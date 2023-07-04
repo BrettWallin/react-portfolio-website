@@ -81,6 +81,7 @@ export default function Projects() {
 
     return (
       <div
+        id="projects"
         key={index}
         className={`project-card ${isActive ? "active" : ""} ${
           isBlurred ? "blur" : ""
@@ -93,7 +94,7 @@ export default function Projects() {
         <p>{project.technologies}</p>
         <div className="button-container">
           <button className="project-button" onClick={() => window.open(project.demoLink, "_blank")}>View Project</button>
-          <button className="project-button" onClick={() => window.open(project.repo, "_blank")}>View Project</button>
+          <button className="project-button" onClick={() => window.open(project.repo, "_blank")}>View GitHub</button>
         </div>
       </div>
     );

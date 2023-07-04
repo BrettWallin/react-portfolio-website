@@ -1,0 +1,90 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 300px;
+}
+  
+.contact-title {
+    font-size: 100px;
+    text-align: center;
+}
+  
+.form-field {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+  
+.error {
+    color: red;
+}
+  
+.success {
+    color: green;
+}
+  
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 500px;
+    padding: 0.5rem;
+}
+  
+textarea {
+    width: 500px;
+    height: 200px;
+}
+  
+.form-button {
+    margin-top: 1rem;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #00FFFF;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+.contact-phone {
+    margin-bottom: 5px;
+}
+
+.contact-email {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.contact-linkedin {
+    margin-top: 0px;
+}
+
+h3 {
+    margin-top: 100px;
+}
+
+a {
+    color: cyan;
+}
+  
+@media screen and (max-width: 600px) {
+    .contact-title {
+        font-size: 60px;
+        text-align: center;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+    width: 300px;
+    padding: 0.5rem;
+    }
+  
+    textarea {
+    width: 300px;
+    height: 200px;
+    }
+}
+  

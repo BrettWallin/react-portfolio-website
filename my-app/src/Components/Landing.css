@@ -27,9 +27,11 @@
 .landing-job-title {
   margin-top: 0px;
   color: #00FFFF;
+  margin-bottom: 5px;
 }
 
 .landing-description {
+  margin-top: 5px;
   font-size: 16px;
   max-width: 600px;
 }

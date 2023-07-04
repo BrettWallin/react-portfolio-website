@@ -6,7 +6,7 @@ export default function Resume() {
 
 
     return(
-        <div className="resume">
+        <div className="resume" id="resume">
             <h1 className="resume-title">My Resume</h1>
             <iframe src={MyResume} title="My Resume" className="resume-pdf"></iframe>
         </div>

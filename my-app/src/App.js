@@ -3,6 +3,7 @@ import Landing from './Pages/Landing'
 import About from './Pages/AboutMe';
 import Projects from './Pages/Projects';
 import Resume from './Pages/Resume';
+import Contact from './Pages/Contact';
 import './App.css';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <About />
       <Projects />
       <Resume />
+      <Contact />
     </div>
   );
 }

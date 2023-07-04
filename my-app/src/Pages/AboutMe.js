@@ -54,7 +54,7 @@ export default function About() {
 
   return (
     <div className="about-me">
-      <div>
+      <div id="about">
         <h1 className="title">My Experience</h1>
         <VerticalTimeline>
           {TimelineElements.map((element) => {
