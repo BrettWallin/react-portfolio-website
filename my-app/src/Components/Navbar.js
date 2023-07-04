@@ -10,15 +10,14 @@ export default function Navbar() {
     if (targetSection) {
       let offset = 0;
 
-      // Adjust the value below to fine-tune the scroll position
       if (targetId === "#projects") {
-        offset = -240; // Subtract 200 pixels from the scroll position
+        offset = -240;
       } else if (targetId === "#about") {
-        offset = -100; // Subtract 200 pixels from the scroll position
+        offset = -100;
       } else if (targetId === "#resume") {
-        offset = -50; // Subtract 200 pixels from the scroll position
+        offset = -50;
       } else if (targetId === "#contact") {
-        offset = -50; // Subtract 200 pixels from the scroll position
+        offset = -50; 
       }
 
       const targetPosition = targetSection.getBoundingClientRect().top + window.pageYOffset;

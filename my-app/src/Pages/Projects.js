@@ -49,7 +49,6 @@ export default function Projects() {
         const sectionHeight = projectSection.offsetHeight;
         const windowHeight = window.innerHeight;
 
-        // Adjust the value below to fine-tune the scroll position when the animation triggers
         const triggerOffset = windowHeight * 0.8;
 
         if (scrollPosition > sectionTop - triggerOffset && scrollPosition < sectionTop + sectionHeight) {
@@ -58,10 +57,8 @@ export default function Projects() {
       }
     };
 
-    // Attach scroll event listener
     window.addEventListener("scroll", handleScroll);
 
-    // Clean up event listener on component unmount
     return () => window.removeEventListener("scroll", handleScroll);
   }, [animateProjects]);
 

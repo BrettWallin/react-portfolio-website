@@ -9,7 +9,6 @@ body{
 
 @media screen and (max-width: 768px) {
   body {
-    /* Mobile-specific styles */
-    font-size: 14px; /* Adjusted font size for mobile */
+    font-size: 14px;
   }
 }

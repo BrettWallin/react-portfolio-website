@@ -19,8 +19,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .navbar {
-      /* Mobile-specific styles */
-      justify-content: center; /* Center align the navbar items for mobile */
-    }
+  .navbar {
+    justify-content: center; 
   }
+}

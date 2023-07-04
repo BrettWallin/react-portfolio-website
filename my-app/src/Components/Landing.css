@@ -94,8 +94,6 @@
     }
   }
 
- /* Add these styles to your existing CSS */
-
 .landing-header-name span {
   animation: typing 2s steps(14), blink-caret 0.75s step-end infinite;
   white-space: nowrap;

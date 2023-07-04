@@ -1,28 +1,53 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { useForm } from '@formspree/react';
 import '../Components/Contact.css';
 
 export default function Contact() {
   const [state, handleSubmit] = useForm('xeqbjynn');
+  const [animateContact, setAnimateContact] = useState(false);
 
-  const handleFormSubmit = async (values, { setSubmitting, setStatus }) => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+      const contactSection = document.getElementById('contact');
+
+      if (contactSection && !animateContact) {
+        const sectionTop = contactSection.offsetTop;
+        const sectionHeight = contactSection.offsetHeight;
+        const windowHeight = window.innerHeight;
+
+        const triggerOffset = windowHeight * 0.8;
+
+        if (scrollPosition > sectionTop - triggerOffset && scrollPosition < sectionTop + sectionHeight) {
+          setAnimateContact(true);
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [animateContact]);
+
+  const handleFormSubmit = async (values, { setSubmitting, setStatus, resetForm }) => {
     try {
       if (!values.name || !values.email || !values.message) {
-        throw new Error('Please fill out all fields.'); // Throw an error if any field is empty
+        throw new Error('Please fill out all fields.');
       }
-      
+
       await handleSubmit(values);
-      setStatus({ success: true }); // Set a success status
+      setStatus({ success: true });
+      resetForm();
     } catch (error) {
-      setStatus({ success: false, error: error.message }); // Set an error status with the error message
+      setStatus({ success: false, error: error.message });
     }
     setSubmitting(false);
   };
 
   return (
-    <div className='contact' id='contact'>
-      <h1 className='contact-title'>Contact Me</h1>
+    <div className={`contact ${animateContact ? 'contact-animate active' : ''}`} id="contact">
+      <h1 className="contact-title">Contact Me</h1>
       <Formik
         initialValues={{
           name: '',
@@ -31,7 +56,7 @@ export default function Contact() {
         }}
         onSubmit={handleFormSubmit}
       >
-        {({ isSubmitting, status }) => (
+        {({ isSubmitting, status, resetForm }) => (
           <Form className="contact-form">
             <div className="form-field">
               <label htmlFor="name">Name:</label>
@@ -66,11 +91,12 @@ export default function Contact() {
         <h3>Feel free to contact me directly:</h3>
         <p className='contact-phone'>Phone Number: (309)205-0226</p>
         <p className='contact-email'>Email: wallinbrett99@gmail.com</p>
-        <p className='contact-linkedin'>LinkedIn: <a href='https://www.linkedin.com/in/brett-wallin/' target="_blank" rel="noopener noreferrer"> Click Here</a></p>
+        <p className='contact-linkedin'>LinkedIn: <a href='https://www.linkedin.com/in/brett-wallin/' target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>Click Here</a></p>
       </div>
     </div>
   );
 }
+
 
 
 

@@ -3,6 +3,20 @@ import Profile from '../Images/Profile.png';
 import '../Components/Landing.css';
 
 export default function Landing() {
+
+  function scrollToSection(event) {
+    event.preventDefault();
+    const targetId = event.target.getAttribute("href");
+    const targetSection = document.querySelector(targetId);
+
+    if (targetSection) {
+      let offset = 0;
+
+      const targetPosition = targetSection.getBoundingClientRect().top + window.pageYOffset;
+      window.scrollTo({ top: targetPosition + offset, behavior: "smooth" });
+    }
+  }
+
   return (
     <div className="landing">
       <img src={Profile} alt="profile" className="profile-pic" />
@@ -14,7 +28,7 @@ export default function Landing() {
           I am a junior at Illinois State University majoring in computer science.
           I am also a passionate software engineer dedicated to continuous learning and growth.
         </h3>
-        <button className="landing-button">Contact Me</button>
+        <button href="#contact" onClick={scrollToSection} className="landing-button">Contact Me</button>
       </div>
     </div>
   );
