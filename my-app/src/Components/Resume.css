@@ -1,0 +1,34 @@
+.resume {
+  height: 136vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 300px;
+}
+
+.resume-title {
+  font-size: 100px;
+  text-align: center;
+}
+
+.resume-pdf {
+  width: 40.5%;
+  height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .resume-title {
+        font-size: 60px;
+    }
+
+    .resume {
+        height: 84vh;
+    }
+
+    .resume-pdf {
+        width: 100%;
+        height: 100%;
+    }
+}
+

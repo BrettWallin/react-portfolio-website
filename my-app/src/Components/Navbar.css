@@ -1,0 +1,25 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    left: 0;
+    width: 100%;
+    background-color: #15202B;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-contents {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    justify-content: center; 
+  }
+}
