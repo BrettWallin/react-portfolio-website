@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5ebb4699.css",
+    "main.js": "/static/js/main.a1ed92bd.js",
+    "static/media/Profile.png": "/static/media/Profile.a34286a6baa8d715f8eb.png",
+    "static/media/Portfolio.PNG": "/static/media/Portfolio.00a78f6d5f09f63d9cb3.PNG",
+    "static/media/TicTacToe.png": "/static/media/TicTacToe.d4f602d39b975495b25d.png",
+    "static/media/MyResume2023.pdf": "/static/media/MyResume2023.9c2b7ed8eede8e93d1f2.pdf",
+    "static/media/React.png": "/static/media/React.90f1275c12501814f7b1.png",
+    "static/media/RockPaperScissors.jpg": "/static/media/RockPaperScissors.835d355e2431f1a27b81.jpg",
+    "static/media/Java.png": "/static/media/Java.ce35ba2bbf958856ce69.png",
+    "static/media/Python.png": "/static/media/Python.c572d923da4992eca3c3.png",
+    "static/media/JavaScript.png": "/static/media/JavaScript.fd72111e7a3228aa9d4b.png",
+    "static/media/CSS.png": "/static/media/CSS.db1bb37696aff256a662.png",
+    "static/media/AWS.png": "/static/media/AWS.d665fa35fd4c0acfbecc.png",
+    "static/media/HTML.png": "/static/media/HTML.3e6f0ec8f0fb2154ab83.png",
+    "static/media/Terraform.png": "/static/media/Terraform.a9932d4c5249e7399e7a.png",
+    "static/media/school.svg": "/static/media/school.a41655f6d5350015803153c7410cef6a.svg",
+    "static/media/work.svg": "/static/media/work.3710b62484ed638074240e99317c6c60.svg",
+    "index.html": "/index.html",
+    "main.5ebb4699.css.map": "/static/css/main.5ebb4699.css.map",
+    "main.a1ed92bd.js.map": "/static/js/main.a1ed92bd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5ebb4699.css",
+    "static/js/main.a1ed92bd.js"
+  ]
+}
